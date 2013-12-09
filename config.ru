@@ -1,4 +1,3 @@
-
-require './hello_world.rb'
+require './app.rb'
 
 run TestApp 
