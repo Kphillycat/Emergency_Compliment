@@ -1,5 +1,6 @@
 class Compliment
   attr_reader :message, :image
+
 	def initialize
 		@message = compliment_generator
 		@image = grab_random_image
@@ -11,7 +12,7 @@ class Compliment
 
   def compliment_generator
     compliments = Array.new
-      File.open("./compliments.txt") do |file|
+      File.open("./lib/compliments.txt") do |file|
           file.each_line do |line|
             matches = line.match(/(\d*.\s)(.*)/)
             compliments << matches[2]

@@ -1,9 +1,12 @@
-require 'bundler' 
+require 'bundler'
+require './lib/compliment' 
 Bundler.require 
 
-class TestApp < Sinatra::Application 
-	
+class App < Sinatra::Application 
+
 	get '/compliment' do
+		@compliment = Compliment.new
+		erb :compliment
 	end
 
 end
