@@ -1,0 +1,9 @@
+source "https://rubygems.org" 
+
+gem "sinatra"
+
+group :development do #since we only need these for development (locally) not production, so when we move somewhere else it won't run these
+	gem "shotgun" #don't have to restart server, can just type shotgun not ruby
+	gem "tux" #interactive console for our application, like debug
+end
+
