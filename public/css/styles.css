@@ -16,7 +16,9 @@ img {
     max-width: auto;
     height: auto;
 }
-
+h2{
+	color:#D5D5DB;
+}
 
 .item {
     width: 200px;
@@ -33,10 +35,6 @@ a {
 	text-align: center;
 }
 
-.link {
-	margin-left: auto;
-    margin-right: auto;
-}
 
 .container-fluid {
 	width: 100%;
@@ -79,6 +77,7 @@ a {
 	text-shadow:1px 1px 0px #ffffff;
 	margin-left: auto;
     margin-right: auto;
+    margin-top: 10px;
 }
 .classname:hover {
 	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #dfdfdf), color-stop(1, #ededed) );
